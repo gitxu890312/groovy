@@ -32,7 +32,7 @@ def map = ["aaa":1,"bbb":2,"ccc":3]
 for (i in map){
     println(i.key+":"+i.value)
 }
-//list结构
+//range结构
 for (i in 0..9){
     print(i+",")
 }
