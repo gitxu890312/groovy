@@ -73,11 +73,10 @@ class Teacher{
     String name
 }
 
-def stu = new Student()
-//def stu = new Student("悟空") 此行报错，不能直接使用构造函数；
-stu.name = "悟空"
-def tea = new Teacher()
-tea.name = "唐僧"
+//def stu = new Student()
+def stu = new Student(name:"悟空") // 直接调用构造函数
+def tea = new Teacher(name:"唐僧")
+
 //修改delegate的引用对象
 stu.sayHello.delegate = tea
 //修改闭包的委托策略
