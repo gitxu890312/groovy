@@ -19,11 +19,19 @@ one line
 two line
 '''
 
-println(str1.class)
-println(str1)
+//println(str1.class)
+//println(str1)
+//
+//println(str2.class)
+//println(str2)
+//
+//println(str3.class)
+//println(str3)
 
-println(str2.class)
-println(str2)
+def result = echo(str2)
+println(result.class)
+println(result)
 
-println(str3.class)
-println(str3)
+def echo(String msg){
+    return msg
+}
